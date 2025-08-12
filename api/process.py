@@ -10,8 +10,9 @@ app = FastAPI()
 
 # IMPORTANT: Add your GitHub Pages URL here to allow requests
 origins = [
-    "https://philonoist7.github.io/EasyOCR/",
-    # You can also add "http://127.0.0.1:5500" for local testing
+    "https://philonoist7.github.io",  # Your live GitHub Pages URL
+    "http://127.0.0.1:5500",      # For local testing with VS Code Live Server
+    "http://localhost:8000",        # Another common local testing address
 ]
 
 app.add_middleware(
